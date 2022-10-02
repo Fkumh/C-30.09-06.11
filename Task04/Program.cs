@@ -10,13 +10,13 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 3-е число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 > num2) 
+if (num1 > num2)
 {
-    if (num1 > num3) Console.WriteLine($"Больше число: {num1}"); 
+    if (num1 > num3) Console.WriteLine($"Больше число: {num1}");
     else Console.WriteLine($"Больше число: {num3}");
 }
-else 
+else
 {
-    if (num2 > num3) Console.WriteLine($"Больше число: {num2}"); 
+    if (num2 > num3) Console.WriteLine($"Больше число: {num2}");
     else Console.WriteLine($"Больше число: {num3}");
 }

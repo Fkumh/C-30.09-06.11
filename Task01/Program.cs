@@ -11,11 +11,11 @@ int square = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 2-ое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (square == number * number) 
+if (square == number * number)
 {
     Console.WriteLine($"Первое число ({square}), является квадратом {number}");
 }
-else 
+else
 {
     Console.WriteLine($"Первое число ({square}), НЕ является квадратом {number}");
 };

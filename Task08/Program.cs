@@ -8,10 +8,10 @@ int counted = 1;
 
 if (num >= 0)
 {
-while (counted <= num)
-{
-    if (counted % 2 == 0) Console.Write($"{counted} ");
-    counted++;
-};
+    while (counted <= num)
+    {
+        if (counted % 2 == 0) Console.Write($"{counted} ");
+        counted++;
+    };
 }
 else Console.WriteLine("Число отрицательное!");
