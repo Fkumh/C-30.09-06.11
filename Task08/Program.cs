@@ -12,6 +12,6 @@ if (num >= 0)
     {
         if (counted % 2 == 0) Console.Write($"{counted} ");
         counted++;
-    };
+    }
 }
 else Console.WriteLine("Число отрицательное!");
