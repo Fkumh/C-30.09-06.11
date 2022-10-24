@@ -28,7 +28,6 @@ double SearchNum (double[] arr)
 {
     double SearchMaxNum = arr[0];
     double SearchMinNum = arr[0];
-    double res = default;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > SearchMaxNum) SearchMaxNum = arr[i];
