@@ -31,11 +31,21 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine("|");
     }
 }
-
-void A(int[,] array2D)
+void PrintArray(double[] array)
 {
     Console.WriteLine();
-    Console.Write("|");
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) System.Console.Write($"{Math.Round(array[i], 2), 6}| ");
+        else Console.Write($"{Math.Round(array[i], 2), 6}");
+    }
+    Console.Write("]");
+}
+
+
+double[] Average(int[,] array2D, double[] res)
+{
     for (int j = 0; j < array2D.GetLength(1); j++)
     {
         double count = 0;
@@ -45,12 +55,13 @@ void A(int[,] array2D)
             count += array2D[i, j];
             num++;
         }
-        double res = count / num;
-        Console.Write($"{Math.Round(res, 2), 6}| ");
-
+        res[j] = count / num;
     }
+    return res;
 }
 int[,] mat = CreateMatrixInt(3, 4, 0, 10);
+double[] result = {0, 0, 0, 0};
 PrintMatrix(mat);
-A(mat);
+double[] res = Average(mat, result);
+PrintArray(res);
 
