@@ -16,7 +16,6 @@ void PrintArray (int[] array)
 
 bool SearchArray (int[] arr, int number)
 {
-    bool result = default;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] == number) return true;
